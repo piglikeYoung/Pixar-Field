@@ -1,5 +1,6 @@
 #UIAppearance简单使用
 iOS5及其以后提供了一个比较强大的工具**UIAppearance**，我们通过UIAppearance设置一些UI的全局效果，这样就可以很方便的实现UI的自定义效果又能最简单的实现统一界面风格，它提供如下两个方法。
+####appearance
 ```
 + (id)appearance
 ```
@@ -8,6 +9,7 @@ iOS5及其以后提供了一个比较强大的工具**UIAppearance**，我们通
 [[UINavigationBar appearance] setTintColor:myColor];
 ```
 
+####appearanceWhenContainedIn
 ```
 + (id)appearanceWhenContainedIn:(Class <>)ContainerClass,...
 ```
@@ -21,13 +23,13 @@ iOS5及其以后提供了一个比较强大的工具**UIAppearance**，我们通
 
 ##使用
 ####修改UINavigationBar样式
-```
+```Objective-C
 UINavigationBar * appearance = [UINavigationBar appearance];
 [appearance setBackgroundImage:[UIImage imageNamed:@"navBg.png"] forBarMetrics:UIBarMetricsDefault];
 ```
 
 ####修改UITabBar样式
-```
+```Objective-C
 UITabBar *appearance = [UITabBar appearance];
 //设置背景图片
 [appearance setBackgroundImage:[UIImage imageNamed:@"tabbarBg.png"]];
@@ -35,7 +37,7 @@ UITabBar *appearance = [UITabBar appearance];
 UIImage * selectionIndicatorImage =[[UIImage imageNamed:@"tabbar_slider"]resizableImageWithCapInsets:UIEdgeInsetsMake(4, 0, 0, 0)] ;
 [appearance setSelectionIndicatorImage:selectionIndicatorImage];
 ```
-**如果想深入了解UIAppearance，可以详细阅读我翻译的这篇文章[UIAppearance入门教程](./contents/拿来主义/UIAppearance入门教程/UIAppearance入门教程.md)**
+**如果想深入了解UIAppearance，可以详细阅读我翻译的这篇文章[UIAppearance入门教程](https://github.com/piglikeYoung/Study-notes/blob/master/contents/%E6%8B%BF%E6%9D%A5%E4%B8%BB%E4%B9%89/UIAppearance%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/UIAppearance%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B.md)**
 
 
 
