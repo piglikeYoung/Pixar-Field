@@ -1,21 +1,21 @@
 #UIAppearance简单使用
 iOS5及其以后提供了一个比较强大的工具**UIAppearance**，我们通过UIAppearance设置一些UI的全局效果，这样就可以很方便的实现UI的自定义效果又能最简单的实现统一界面风格，它提供如下两个方法。
 ####appearance
-```
+```objectivec
 + (id)appearance
 ```
 这个方法是获取全局配置，比如你设置UINavBar的tintColor，你可以这样写：
-```
+```objectivec
 [[UINavigationBar appearance] setTintColor:myColor];
 ```
 
 ####appearanceWhenContainedIn
-```
+```objectivec
 + (id)appearanceWhenContainedIn:(Class <>)ContainerClass,...
 ```
 
 这个方法可设置某个类的样式改变：例如：设置UIBarButtonItem 在UINavigationBar、UIPopoverController、UITabbar中的效果。就可以这样写
-```
+```objectivec
 [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], [UIPopoverController class],[UITabbar class] nil] setTintColor:myPopoverNavBarColor];
 ```
 
@@ -23,13 +23,13 @@ iOS5及其以后提供了一个比较强大的工具**UIAppearance**，我们通
 
 ##使用
 ####修改UINavigationBar样式
-```Objective-C
+```objectivec
 UINavigationBar * appearance = [UINavigationBar appearance];
 [appearance setBackgroundImage:[UIImage imageNamed:@"navBg.png"] forBarMetrics:UIBarMetricsDefault];
 ```
 
 ####修改UITabBar样式
-```Objective-C
+```objectivec
 UITabBar *appearance = [UITabBar appearance];
 //设置背景图片
 [appearance setBackgroundImage:[UIImage imageNamed:@"tabbarBg.png"]];
