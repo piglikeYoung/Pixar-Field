@@ -22,7 +22,7 @@
 | Project | Code
 |:-------:|:------:
 |iOSDevTips | [iOSDevTips](https://github.com/piglikeYoung/iOSDevTips)
-|《一个》APP | [[《一个》APP]]
+|《一个》APP | [《一个》APP](./contents/自己动手/《一个》APP/《一个》APP.md)
 |一个类似QQ可滑动界面 | [一个类似QQ可滑动界面](https://github.com/piglikeYoung/SildeLikeQQ)
 
 
