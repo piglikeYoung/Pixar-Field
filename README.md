@@ -5,6 +5,12 @@
 
 > I don't read books, never went to school, I just read other people's code and always wonder how things work. —— TJ Holowaychuk
 
+
+## 博客地址
+[學徒杨小胖的开发随笔](http://piglikeyoung.com/)
+
+这里估计不会更新内容了，志同道合的朋友可以移步我的博客，🐱
+
 ## 目录
 ###能工巧匠
 | Article | Read
