@@ -1,22 +1,22 @@
-## 2015-09-18
 原文：[《UIAppearance Tutorial: Getting Started》](http://www.raywenderlich.com/108766/uiappearance-tutorial)
 
 译者注：这篇文章是使用UIAppearance定义UI界面的入门教程
 
-##序言
+## 序言
 虽然iOS的拟物设计已经成为了过去式，但是这并不代表你的iOS App的控件的外观被限制在系统自有的那几个。
 当然，你可以重新定义自己的控件和App的外观，在这个时候，Apple推荐开发者使用标准的UIKit控件并利用iOS提供的各种自定义的方法来达到你的效果。这样做的原因是因为UIKit控件运行效率非常高， 另外你的这些自定义的控件也会在未来的版本中表现更好的兼容性。
 在这个UIAppearance的教程中，你会用一些基本的UI自定义技术美化一款寻找宠物的App使它由平常变得与众不同。
 
-##开篇
+## 开篇
 [点击这里](http://cdn1.raywenderlich.com/wp-content/uploads/2015/06/Pet_Finder_Starter.zip)下载本教程的所用到的源码。这个App使用了很多标准UIKit控件，配色是默认的vanilla。
 
 打开这个项目，然后看看它的结构，编译运行后，宠物查找器的主界面是这样子的：
-![pet_1](http://cdn5.raywenderlich.com/wp-content/uploads/2015/07/plain-600x500.png)
+![plain-600x500](http://p44bkxib3.bkt.clouddn.com/plain-600x500.png)
+
 
 APP有一个导航栏和一个标签栏。主界面显示了宠物列表；点击一个宠物会显示他的详情。同时这里有一个查找界面。一个可以让用户选择主题的界面好像是个不错的主意，我们可以从这里开始。
 
-##支持主题
+## 支持主题
 很多Apps并不能让用户选择主题，在大多数时候也并不推荐开发者去发布一个具有主题选择功能的App。如果你的app显示的内容没有控制好，你会很快发现你的App中的主题相互冲突。但是，你也许在开发阶段会想对不同
 的主题进行测试来看看哪个更适合你的App,或者做一个A/B 测试来看Beta版本的用户更喜欢哪种主题。
 
@@ -82,7 +82,7 @@ UIDeviceRGBColorSpace 0.94902 0.396078 0.133333 1
 ```
 那么从现在起，你已经有三个主题，并且你可以通过ThemeManager对他们进行管理。现在是时候在App中使用他们了。
 
-##主题添加到控件
+## 主题添加到控件
 回到Theme.swift，添加下面的方法到ThemeManager:
 ```swift
 static func applyTheme(theme: Theme) {
@@ -110,7 +110,7 @@ ThemeManager.applyTheme(theme)
 
 Build and run。你会发现你的App明显看起来偏绿色调多了：
 
-![pet_2](http://cdn5.raywenderlich.com/wp-content/uploads/2015/06/theme_applied1.png)
+![theme_applied1](http://p44bkxib3.bkt.clouddn.com/theme_applied1.png)
 
 在App中随便点点；会发现各种地方都已经是这种颜色了。但是你并没有在controller或者view上面做任何修改，这个绿魔法到底是什么呢？:]
 
@@ -134,15 +134,14 @@ themeSelector.selectedSegmentIndex = ThemeManager.currentTheme().rawValue
 ```
 
 Build and run.点击设置按键，选择Dark主题然后提交修改。App的主色调将瞬间会从绿色变为橙色。
-
-![pet_3](http://cdn1.raywenderlich.com/wp-content/uploads/2015/06/theme_applied2.png)
+![theme_applied2](http://p44bkxib3.bkt.clouddn.com/theme_applied2.png)
 
 眼神锐利的读者或许已经注意到这些颜色就是定义在ThemeType的mainColor()
 
 
 稍等，当你选择Dark，APP不像夜间的颜色，为了达到夜间的效果，你还需要再自定义些东西。
 
-##自定义导航条
+## 自定义导航条
 打开Theme.swift， 添加两个方法到Theme:
 ```swift
 var barStyle: UIBarStyle {
@@ -172,13 +171,13 @@ UIKit有一个非正式的协议叫做UIAppearance，UIAppearance包含了很多
 
 Build and run。选择夜间主题，导航条会看起来更像夜间:
 
-![pet_4](http://cdn4.raywenderlich.com/wp-content/uploads/2015/06/theme_applied3.png)
+![theme_applied3](http://p44bkxib3.bkt.clouddn.com/theme_applied3.png)
 
 这样看起来是不是更加好看了，但是你还要做些工作。
  
 下一步，你将自定义返回的按钮，iOS使用的是默认chevron符号，但是你可以写些更有趣的东西:]
 
-##自定义导航条的返回按钮
+## 自定义导航条的返回按钮
 返回按钮是所有主题共用的，所以你只需在Themes.swift的applyTheme()里添加下列代码：
 ```swift
 UINavigationBar.appearance().backIndicatorImage = UIImage(named: "backArrow")
@@ -188,7 +187,7 @@ UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "
 
 Build and run. 点击宠物就能看到设置好的返回按钮:
 
-![pet_5](http://cdn1.raywenderlich.com/wp-content/uploads/2015/06/back_button.png)
+![back_button](http://p44bkxib3.bkt.clouddn.com/back_button.png)
 
 打开存放图片的Images.xcassets，找名字叫‘backArrow’的图片，你会发现图片是黑色的，但是在APP里图片颜色随着主题颜色的改变而改变。
 
@@ -200,7 +199,7 @@ iOS如何改变按钮图片的颜色，还有为什么只有返回按钮的图�
 
 回过头来看APP，点击某个宠物或者Adopt进入下一层。仔细观察navigation bar返回按钮的动画，你看到问题了吗？
 
-![pet_6](http://cdn3.raywenderlich.com/wp-content/uploads/2015/06/mask1.gif)
+![mask1](http://p44bkxib3.bkt.clouddn.com/mask1.gif)
 
 当Back文字从左往右移动时，它转过了左箭头图片，看起来很不优雅：<br/>
 修复它，你要改变transition mask 的图片<br/>
@@ -209,14 +208,14 @@ iOS如何改变按钮图片的颜色，还有为什么只有返回按钮的图�
 UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "backArrow")
 ```
 Build and run. 再次点击某个宠物或者Adopt进入下一层. 这次动画看起来好多了:<br/>
-![pet_7](http://cdn4.raywenderlich.com/wp-content/uploads/2015/06/mask2.gif)
+![mask2](http://p44bkxib3.bkt.clouddn.com/mask2.gif)
 
 文字不再切断并且在左箭头图片的后面通过。所以到底发生了什么？<br/>
 使用整张非透明图片和有透明的图片作为返回按钮的transition mask会产生完全不一样效果：使用整张非透明图片，文字会从左到右在左箭头图片后面通过，左箭头后面也是可显示的范围。
 在最初的实现，你提供了一种图像覆盖整个表面，文字可见通过左箭头。但你现在使用的左箭头图片本身作为mask，但文字消失在mask的右边缘，而不是在左箭头的右边。
 
 看看‘backarrowmaskfixed’图片，返回按钮箭头和文字如何完美的结合在一起:<br/>
-![pet_8](http://cdn3.raywenderlich.com/wp-content/uploads/2015/06/indicator_mask.png)
+![indicator_mask](http://p44bkxib3.bkt.clouddn.com/indicator_mask.png)
 
 黑色的形状是左箭头图片，红色的形状是mask。这样文本可以从红色区域显示，在其他地方就隐藏。
 
@@ -225,9 +224,9 @@ Build and run. 再次点击某个宠物或者Adopt进入下一层. 这次动画�
 UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "backArrowMaskFixed")
 ```
 Build and run.  点击某个宠物或者Adopt进入下一层. 你将会看到文字在图片下面消失，这就是你预期要实现的效果:<br/>
-![pet_9](http://cdn4.raywenderlich.com/wp-content/uploads/2015/06/mask3.gif)
+![mask3](http://p44bkxib3.bkt.clouddn.com/mask3.gif)
 
-##自定义Tab Bar
+## 自定义Tab Bar
 仍然在Theme.swift, 添加代码到 Theme:
 ```swift
 var tabBarBackgroundImage: UIImage? {
@@ -273,13 +272,13 @@ UITabBar.appearance().selectionIndicatorImage = tabResizableIndicator
 
 Build and run. 你会看到最新样式的tab bar:
 
-![pet_9](http://cdn3.raywenderlich.com/wp-content/uploads/2015/06/theme_applied4.png)
+![theme_applied4](http://p44bkxib3.bkt.clouddn.com/theme_applied4.png)
 
 夜间模式真正变得越来越好看了! :]<br/>
 indicator 图片总是 6 points 高度 and 49 points 宽度, iOS 在运行时将它拉伸.<br/>
 下一节将介绍可调整大小的图像和它们是如何工作的。
 
-##自定义Segmented Control
+## 自定义Segmented Control
 添加下列代码到Theme.swift的applyTheme()底部
 ```swift
 let controlBackground = UIImage(named: "controlBackground")?
@@ -297,13 +296,15 @@ UISegmentedControl.appearance().setBackgroundImage(controlSelectedBackground, fo
 为了理解代码，先看看controlBackground图片。图片非常小，但iOS会非常智能的裁剪和拉伸图片。
 
 切片的意思是什么？请看放大后的模型：<br/>
-![pet_11](http://cdn5.raywenderlich.com/wp-content/uploads/2015/06/slicing.png)
+![slicing](http://p44bkxib3.bkt.clouddn.com/slicing.png)
+
 
 There are four 3×3 squares, one in each corner. These squares are left untouched when resizing the image, but the gray pixels get stretched horizontally and vertically as required.
 In your image, all the pixels are black and assume the tint color of the control. You instruct iOS how to stretch the image using UIEdgeInsets() and passed 3 for the top, left, bottom and right parameters since your corners are 3×3.
 
 Build and run. 点击Gear icon ，看到UISegmentedControl 新的样式:<br/>
-![pet_12](http://cdn5.raywenderlich.com/wp-content/uploads/2015/07/segmented.png)
+![segmented](http://p44bkxib3.bkt.clouddn.com/segmented.png)
+
 
 圆润的边角已经被你的3×3方角取代。
 
@@ -320,7 +321,8 @@ UIStepper.appearance().setIncrementImage(UIImage(named: "morePaws"), forState: .
 这不仅改变了颜色的UISegmentedControl，还改变了无聊的 + 和 - 符号。
 
 Build and run. 打开 Search 看看改变:<br/>
-![pet_13](http://cdn3.raywenderlich.com/wp-content/uploads/2015/07/stepper.png)
+
+![stepper](http://p44bkxib3.bkt.clouddn.com/stepper.png)
 
 UISlider 和 UISwitch 添加相应的主题。<br/>
 添加下列代码到applyTheme():
@@ -345,11 +347,12 @@ the maximum track没有更改渲染模式，the minimum track修改渲染模式�
 UISwitch的thumbTintColor和主题颜色一致，onTintColor的颜色更浅一些，能够和thumbTintColor的颜色产生对比
 
 Build and run. 点击 Search ：<br/>
-![pet_14](http://cdn4.raywenderlich.com/wp-content/uploads/2015/07/slider-switch.png)
+
+![slider-switch](http://p44bkxib3.bkt.clouddn.com/slider-switch.png)
 
 正如你看到的，appearance代理将会改变所有同类型控件的属性，但是有时候你不想全局修改控件，有些地方你想单独修改某个控件！
 
-##自定义单个控件
+## 自定义单个控件
 打开 SearchTableViewController.swift， 添加 下列代码到 viewDidLoad():
 ```swift
 speciesSelector.setImage(UIImage(named: "dog"), forSegmentAtIndex: 0)
@@ -357,7 +360,7 @@ speciesSelector.setImage(UIImage(named: "cat"), forSegmentAtIndex: 1)
 ```
 分别给segment设置图片。
 Build and run. 打开 Search :<br/>
-![pet_15](http://cdn4.raywenderlich.com/wp-content/uploads/2015/06/species.png)
+![species](http://p44bkxib3.bkt.clouddn.com/species.png)
 
 iOS自动翻转segment的选中色，这是因为图片自动使用Template模式渲染图片。
 
@@ -373,11 +376,13 @@ cell.textLabel!.font = UIFont(name: "Zapfino", size: 14.0)
 改变cell textLabel 的字体
 
 Build and run. 比较APP修改之前，之后的样子：<br/>
-![pet_16](http://cdn2.raywenderlich.com/wp-content/uploads/2015/07/theme_applied5-580x500.png)
+
+![theme_applied5-580x500](http://p44bkxib3.bkt.clouddn.com/theme_applied5-580x500.png)
 
 下图显示之前和之后的结果搜索界面，我想你会同意，新版本更和谐和有趣。<br/>
-![pet_17](http://cdn1.raywenderlich.com/wp-content/uploads/2015/07/theme_applied6-580x500.png)
 
-##总结
+![theme_applied6-580x500](http://p44bkxib3.bkt.clouddn.com/theme_applied6-580x500.png)
+
+## 总结
 你可以下载完成的项目从本教程的所有调整在[这里](http://cdn1.raywenderlich.com/wp-content/uploads/2015/06/Pet-Finder_Finished.zip)
 
