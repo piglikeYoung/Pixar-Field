@@ -5,7 +5,7 @@
 
 > I don't read books, never went to school, I just read other people's code and always wonder how things work. —— TJ Holowaychuk
 
-**之前我曾经搭建过自己的 [Blog](http://piglikeyoung.com/) ，现在回归使用 Github 记录学习历程，如果有想搭建自己的 Blog 的朋友请参考👇的文章。**
+**之前我曾经搭建过自己的 [Blog](http://piglikeyoung.com/) ，现在回归使用 Github 记录学习历程，如果有想搭建自己的 Blog 的朋友请参考👇的文章，我会慢慢把 Blog 的文章一一转移到这里归类整理**
 
 
 ##  iOS
