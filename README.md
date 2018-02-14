@@ -10,19 +10,14 @@
 
 | 主题 | 文章 | 备注 |
 |:-------:|:------|:----:|
-| Xcode |[Assets.car的解析](./contents/能工巧匠/Assets.car的解析/Assets.car的解析.md)||
+| Xcode |[Assets.car的解析](./contents/2015-09-01-Assets.car的解析.md)||
+| UIAppearance | [UIAppearance入门教程](./contents/2015-09-18-UIAppearance入门教程.md)|翻译|
 
-
-## 翻译
-
-| 主题 | 文章 | 备注 |
-|:-------:|:------|:----:|
-| UIAppearance | [UIAppearance入门教程](./contents/拿来主义/UIAppearance入门教程/UIAppearance入门教程.md)||
 
 ## 设计
 
 | 主题 | 文章 | 备注 |
 |:-------:|:------|:----:|
-| APP设计 | [APP设计规范大全](./contents/拿来主义/APP设计规范大全/APP设计规范大全.md)||
+| APP设计 | [APP设计规范大全](./contents/2015-09-08-APP设计规范大全.md)||
 
 
