@@ -5,13 +5,16 @@
 
 > I don't read books, never went to school, I just read other people's code and always wonder how things work. —— TJ Holowaychuk
 
+**之前我曾经搭建过自己的 [Blog](http://piglikeyoung.com/) ，现在回归使用 Github 记录学习历程，如果有想搭建自己的 Blog 的朋友请参考👇的文章。**
+
 
 ##  iOS
 
 | 主题 | 文章 | 备注 |
 |:-------:|:------|:----:|
 | Xcode |[Assets.car的解析](./contents/2015-09-01-Assets.car的解析.md)||
-| UIAppearance | [UIAppearance入门教程](./contents/2015-09-18-UIAppearance入门教程.md)|翻译|
+| UIAppearance | [UIAppearance入门教程](./contents/2015-09-18-UIAppearance入门教程.md)| 翻译 |
+| Block | [Block Tips](./contents/2016-09-04-block-tips.md)| Objc |
 
 
 ## 设计
@@ -19,5 +22,11 @@
 | 主题 | 文章 | 备注 |
 |:-------:|:------|:----:|
 | APP设计 | [APP设计规范大全](./contents/2015-09-08-APP设计规范大全.md)||
+
+## Blog
+
+| 主题 | 文章 | 备注 |
+|:-------:|:------|:----:|
+| Blog搭建 | [GitHub Pages + Hexo搭建博客](./contents/2016-08-31-gitHub-pages-hexo-blog.md)||
 
 
