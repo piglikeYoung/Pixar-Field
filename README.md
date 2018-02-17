@@ -28,6 +28,8 @@
 | Push | [防止点击Cell时ViewController被重复Push](./contents/2016-09-12-duplicate-push.md)| |
 | 效率 | [检测一段iOS代码的执行效率函数](./contents/2016-09-11-code-execution-efficiency-function.md)| |
 | GCD | [GCD信号锁](./contents/2016-09-11-GCD-signal-lock.md)| |
+| Animation | [取消UIKit中某些控件的隐式动画](./contents/2016-09-06-performWithoutAnimation-cancel-implicit-animation.md)| |
+| Array | [遍历中修改可变数组](./contents/2016-09-04-modify-mutable-array.md)| |
 | Block | [Block Tips](./contents/2016-09-04-block-tips.md)| Objc |
 | Xcode |[Assets.car的解析](./contents/2015-09-01-Assets.car的解析.md)||
 | UIAppearance | [UIAppearance入门教程](./contents/2015-09-18-UIAppearance入门教程.md)| 翻译 |
