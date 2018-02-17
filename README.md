@@ -23,6 +23,8 @@
 | nil | [nil / Nil / NULL / NSNull](./contents/2016-11-13-null-and-nil.md)| |
 | CALayer | [学习 CALayer（一）](./contents/2016-10-15-learn-CALayer-1.md)<br>[学习 CALayer（二）](./contents/2016-10-22-learn-CALayer-2.md)<br>[学习 CALayer（三）](./contents/2016-10-29-learn-CALayer-3.md)| |
 | GCD | [使用 GCD（一）](./contents/2016-09-25-Using-Grand-Central-Dispatch-1.md)<br>[使用 GCD（二）](./contents/2016-10-01-Using-Grand-Central-Dispatch-2.md)<br>[使用 GCD（三）](./contents/2016-10-04-Using-Grand-Central-Dispatch-3.md)| |
+| 本地化 | [字符串本地化](./contents/2016-09-22-localized-string.md)| |
+| Lock | [Objective-C中几种锁的实现（一）](./contents/2016-09-15-Objc-lock-1.md)<br>[Objective-C中几种锁的实现（二）](./contents/2016-09-15-Objc-lock-2.md)| Objc |
 | Block | [Block Tips](./contents/2016-09-04-block-tips.md)| Objc |
 | Xcode |[Assets.car的解析](./contents/2015-09-01-Assets.car的解析.md)||
 | UIAppearance | [UIAppearance入门教程](./contents/2015-09-18-UIAppearance入门教程.md)| 翻译 |
