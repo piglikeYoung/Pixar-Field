@@ -52,4 +52,11 @@
 |:-------:|:------|:----:|
 | Blog搭建 | [GitHub Pages + Hexo搭建博客](./contents/2016-08-31-gitHub-pages-hexo-blog.md)||
 
+## 书籍
+
+| 主题 | 文章 | 备注 |
+|:-------:|:------|:----:|
+| Core Animation | [iOS Core Animation: Advanced Techniques 中文译本](https://www.gitbook.com/book/zsisme/ios-/details)||
+| 基礎開發教材 | [KKBOX iOS/Mac OS X 基礎開發教材](https://www.gitbook.com/book/zonble/kkbox-ios-dev/details)||
+
 
