@@ -47,7 +47,7 @@ print(num) // 6
 
 
 ```swift
-func duplicate2(data: [Int]) -> Int {
+func P39_duplicate2(data: [Int]) -> Int {
     var numbers = data
     
     guard numbers.count > 2 else {
@@ -77,7 +77,7 @@ func duplicate2(data: [Int]) -> Int {
     return -1;
 }
 
-let num2 = duplicate2(data: [6,3,6,0,2,5,3])
+let num2 = P39_duplicate2(data: [6,3,6,0,2,5,3])
 print(num2) // 3
 
 ```
@@ -95,7 +95,7 @@ print(num2) // 3
 不修改原始数据，时间复杂度o(nlogn)，空间复杂度o(1)
 
 ```swift
-func duplicate3(data: [Int]) -> Int {
+func P42_duplicate3(data: [Int]) -> Int {
     guard data.count > 0 else {
         return -1;
     }
@@ -142,7 +142,7 @@ func countRange(numbers: [Int], start: Int, end: Int) -> Int {
     
 }
 
-let num3 = duplicate3(data: [4,4,6,1,2,5,3])
+let num3 = P42_duplicate3(data: [4,4,6,1,2,5,3])
 print(num3) // 4
 ```
 
