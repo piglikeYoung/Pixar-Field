@@ -55,6 +55,12 @@
 |:-------:|:------|:----:|
 | Blog搭建 | [GitHub Pages + Hexo搭建博客](./contents/2016-08-31-gitHub-pages-hexo-blog.md)||
 
+## 效率
+
+| 主题 | 文章 | 备注 |
+|:-------:|:------|:----:|
+| iTerm2 + Oh My Zsh 打造舒适终端体验 | [iTerm2 + Oh My Zsh 打造舒适终端体验](./contents/2018-05-26-iterm2-with-oh-my-zsh.md)||
+
 ## 书籍
 
 | 主题 | 文章 | 备注 |
