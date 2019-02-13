@@ -1,14 +1,19 @@
-# Study-notes
-### 为什么要建这个仓库
+# Pixar'Field
+
+<p align='left'>
+<img src="https://img.shields.io/badge/build-passing-brightgreen.svg"> 
+<img src="https://img.shields.io/badge/platform-iOS-ff69b4.svg">
+<img src="https://img.shields.io/badge/language-Objective--C-orange.svg">
+<img src="https://img.shields.io/badge/language-Swift-abcdef.svg">
+</p>
+## ⭐️ 为什么要建这个仓库
 看了不少人的博客，发现好多大神都有写博客的习惯，我也跟随大神，走自己的大神之路，在这里记录我学习旅程。附两条语录：
 > 我花费了大量的时间阅读和学习各种开源的代码、研究其中的实现原理、尝试自己实现相关技术、尝试在工作中使用，这使得我在 iOS 开发技术上进步很快。 —— ibireme
 
 > I don't read books, never went to school, I just read other people's code and always wonder how things work. —— TJ Holowaychuk
 
-**之前我曾经搭建过自己的 [Blog](http://piglikeyoung.com/) ，现在回归使用 Github 记录学习历程，如果有想搭建自己的 Blog 的朋友请参考👇的文章，我会慢慢把 Blog 的文章一一转移到这里归类整理**
 
-
-##  iOS
+## 📱 iOS
 
 | 主题 | 文章 | 备注 |
 |:-------:|:------|:----:|
@@ -38,30 +43,30 @@
 | UIAppearance | [UIAppearance入门教程](./contents/2015-09-18-UIAppearance入门教程.md)| 翻译 |
 
 
-## RN
+## 😈 RN
 | 主题 | 文章 | 备注 |
 |:-------:|:------|:----:|
 | ReactNative | [学习 ReactNative 基础（一）](./contents/2017-03-05-Learn-ReactNative-1.md)<br> [学习 ReactNative 基础（二）](./contents/2017-03-18-Learn-ReactNative-2.md)<br> [学习 ReactNative 基础（三）](./contents/2017-03-26-Learn-ReactNative-3.md)<br> [学习 ReactNative 基础（四）](./contents/2017-04-03-Learn-ReactNative-4.md)<br> [学习 ReactNative 基础（五）](./contents/2017-04-22-Learn-ReactNative-5.md)<br> [学习 ReactNative 基础（六）](./contents/2017-04-27-Learn-ReactNative-6.md)| |
 
-## 设计
+## 📝 设计
 
 | 主题 | 文章 | 备注 |
 |:-------:|:------|:----:|
 | APP设计 | [APP设计规范大全](./contents/2015-09-08-APP设计规范大全.md)||
 
-## Blog
+## ♥️ Blog
 
 | 主题 | 文章 | 备注 |
 |:-------:|:------|:----:|
 | Blog搭建 | [GitHub Pages + Hexo搭建博客](./contents/2016-08-31-gitHub-pages-hexo-blog.md)||
 
-## 效率
+## 🚀 效率
 
 | 主题 | 文章 | 备注 |
 |:-------:|:------|:----:|
 | iTerm2 + Oh My Zsh 打造舒适终端体验 | [iTerm2 + Oh My Zsh 打造舒适终端体验](./contents/2018-05-26-iterm2-with-oh-my-zsh.md)||
 
-## 书籍
+## 📖 书籍
 
 | 主题 | 文章 | 备注 |
 |:-------:|:------|:----:|
