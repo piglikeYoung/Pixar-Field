@@ -75,4 +75,10 @@
 | Core Animation | [iOS Core Animation: Advanced Techniques 中文译本](https://www.gitbook.com/book/zsisme/ios-/details)||
 | 基礎開發教材 | [KKBOX iOS/Mac OS X 基礎開發教材](https://www.gitbook.com/book/zonble/kkbox-ios-dev/details)||
 
+## 💪 年度总结
+
+| 文章 |
+|:-------:|
+| [2018年年度总结](./contents/2018年年度总结.md)|
+
 
