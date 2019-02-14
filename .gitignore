@@ -1,6 +1,9 @@
 # Xcode
 #
 build/
+docs/
+metadata/
+mainlib.db
 *.pbxuser
 !default.pbxuser
 *.mode1v3
