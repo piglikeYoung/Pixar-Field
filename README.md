@@ -76,8 +76,10 @@
 | 基礎開發教材 | [KKBOX iOS/Mac OS X 基礎開發教材](https://www.gitbook.com/book/zonble/kkbox-ios-dev/details)||
 
 ## 📅 ARTS
+| 文章 |
+|:-------:|
+| [ARTS 汇总](./ARTS/ARTS-Summary.md)|
 
-[ARTS 汇总](./ARTS/ARTS-Summary.md)
 
 ## 💪 年度总结
 
